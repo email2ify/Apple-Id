@@ -9,18 +9,12 @@ while attempts > 0:
     if user_number == secret_number:
         print('You are logged in')
         break
-        
-    
-    
-    elif attempts  <= 0:    
-        print('You are blocked!')
-        
-    
-    else:    
+    else: 
         attempts -=1
-
-    
-    print(f'failed you have {attempts} attempts left')
+        if attempts == 0:
+            print('You are blocked!')
+        else:     
+            print(f'failed you have {attempts} attempts left')
 
 
     
